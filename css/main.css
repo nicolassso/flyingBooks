@@ -4,14 +4,30 @@ body {
 header{
     margin-top: 75px;
 }
-
-.section-grey {
-  background: #f1f1f1;
-  padding: 50px 0 30px 0;
-  margin-top: 40px;
-}
-
 footer{
     background: url(../img/smartphones.png) no-repeat;
+}
+#animated-img1{
+  width: 50%;
+}
+/*.givingBorders{
+  border-style: outset;
+  border-color: grey;
+}*/
+.list-group-item.active {
+  background: #6c757d;
+  color: white;
+  border-color: #6c757d;
+}
+.list-group-item{
+  color: #6c757d;
+  border-color: #6c757d;
+  background: transparent;
 
+}
+a:hover {
+  background: #6c757da4;
+  color: white;
+  border-color: #6c757d;
+  border-top: white;
 }
