@@ -98,7 +98,7 @@
           <div class="col-xs-6 col-sm-6 col-md-3 givingBorders">
             <div class="info-left" style="margin: auto;">
               <div class="content-up">
-                <nav class="navbar">
+                <nav class="navbar" id="categories">
                   <form class="form-inline" style="margin: auto;" action="/action_page.php">
                     <input class="form-control mr-sm-2" type="text" placeholder="Búsqueda">
                     <button class="btn btn-outline-secondary btn-md mt-2" type="submit">Buscar</button>
@@ -189,7 +189,7 @@
       </div>
     </section>
     <!--FOOTER-->
-    <footer class="bg-light text-black ">
+    <footer class="bg-light text-black footer">
       <div class="container">
         <nav class="row text-center">
           <!--logo-->
@@ -223,11 +223,18 @@
       sr.reveal(".navbar", {
         duration: 2000,
         origin: "top",
+        distance: "150px",
       });
       sr.reveal(".header-content-left", {
         duration: 2000,
         origin: "left",
         distance: "300px",
+      });
+      sr.reveal("#categories", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px",
+        viewFactor: 0.2,
       });
       sr.reveal(".header-content-right", {
         duration: 2000,
@@ -238,10 +245,10 @@
         duration: 2000,
         origin: "bottom",
         delay: 1000,
-      });
-      sr.reveal("#categories", {
+      });      
+      sr.reveal(".footer", {
         duration: 2000,
-        origin: "bottom",
+        origin: "back",
         distance: "300px",
         viewFactor: 0.2,
       });
